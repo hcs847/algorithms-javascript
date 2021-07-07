@@ -1,7 +1,3 @@
-/**
- * @param {string} s
- * @return {number}
- */
 var firstUniqChar = function (s) {
     let counterSingle = {};
     let counterRepeate = {};

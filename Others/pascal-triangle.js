@@ -1,7 +1,3 @@
-/**
- * @param {number} numRows
- * @return {number[][]}
- */
 var generate = function (numRows) {
     const arrNumRows = [];
     let row = 1;
