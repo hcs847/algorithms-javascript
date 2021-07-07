@@ -1,7 +1,3 @@
-/**
- * @param {number[]} digits
- * @return {number[]}
- */
 var plusOne = function (digits) {
     let last = digits.pop();
     if (last < 9) {
