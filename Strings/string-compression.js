@@ -5,7 +5,8 @@
 // The compressed string s should not be returned separately, but instead be stored in the input character array chars. 
 // Note that group lengths that are 10 or longer will be split into multiple characters in chars.
 // After you are done modifying the input array, return the new length of the array.
-// You must write an algorithm that uses only constant extra space.
+// Algorithm can only use constant extra space.
+
 var compress = function (chars) {
     let len = chars.length;
     if (len === 1) return;
@@ -20,6 +21,7 @@ var compress = function (chars) {
             counterStr = counter.toString().split('');
             // leave first char, delete the rest and inster counter string
             chars.splice(i + 1, counter - 1, ...counterStr);
+            // reset counter for the next chars
             counter = 1;
         }
     }
